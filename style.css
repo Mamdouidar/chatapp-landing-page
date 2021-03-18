@@ -37,6 +37,22 @@ button {
     margin-bottom: 7.5rem;
 }
 
+.header .menu-toggle {
+    width: 62px;
+    background: none;
+    border: none;
+    display: none;
+}
+
+.header .toggle-line {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #EA3D3D;
+    border-radius: 4px;
+    margin: 2px 0;
+}
+
 .header p {
     font-family: 'Poppins', sans-serif;
     color: #D9DBDD;
@@ -66,6 +82,7 @@ button {
     align-items: center;
     padding-bottom: 8.75rem;
 }
+
 
 .info {
     display: flex;
@@ -202,6 +219,139 @@ button {
 
 .cr {
     margin-left: 6.5rem;
+}
+
+@media (max-width: 64rem) {
+    .cta .wrapper {
+        flex-direction: column;
+    }
+    .cta img {
+        width: 100%;
+    }
+
+    .cta-info {
+        width: 100%;
+        margin-bottom: 2rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cta .line {
+        width: 100%;
+    }
+
+    .rating img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 48rem) {
+    .wrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .hero .info {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+
+    
+}
+
+@media (max-width: 36rem) {
+    .wrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+        margin-left: 1rem;
+    }
+
+    .header {
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .header .menu-toggle {
+        display: block;
+        order: 1;
+    }
+
+    .header .nav-menu {
+        flex-direction: column; 
+        display: none;
+    }
+
+    .header .open {
+        position: absolute;
+        top: 100%;
+        left: 75%;
+        background-color: #EA3D3D;
+        border-radius: 10px;
+        height: 100px;
+        width: 90px;
+        display: block;
+        text-align: center;
+    }
+
+    .header ul li a {
+        margin: auto;
+        padding: auto;
+    }
+
+    .header p {
+        padding-left: 2rem;
+    }
+
+    .hero .info h1 {
+        font-size: 2rem;
+    }
+
+    .about h1 {
+        text-align: center;
+    }
+
+    .about p {
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .menus {
+        flex-direction: column;
+    }
+
+    .footer ul {
+        margin-top: 1rem;
+    }
+
+    .cr {
+        margin: 1rem auto;
+        font-weight: bold;
+    }
 }
 
 
